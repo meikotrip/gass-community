@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report - GASS</title>
+    <!--Font awesome cdn link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900,900i" rel="stylesheet">
+
+    <!--Bootstrap offline-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!--JQuery-->
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            var btn = $('#backtop');
+
+            $(window).scroll(function() {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+            });
+
+            btn.on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop:0}, '1000');
+            });
+
+        });
+    </script>
+    <script>
+    function info() {
+        var text = "<marquee>";
+        
+        text+= "<p> Donasi Terhimpun :" + "<strong> Rp 543.435.000</strong> </p>";
+        text+= "<p> Orang Peduli :" + "<strong> 7513</strong> </p>";
+        text+= "<p> Program Donasi :" + "<strong> 232</strong> </p>";
+        text+= "</marquee>";
+
+        document.getElementById("ajax").innerHTML = text;
+    }
+    </script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="Our Logo's">
+        </a>
+    
+        <div id="menu-bar" class="fas fa-bars"></div>
+    
+        <nav class="navbaru">
+            <a style="--i:0;" href="index.html#home" class="">Home</a>
+            <a style="--i:1;" href="index.html#profile" class=" ">Profile</a>
+            <a style="--i:2;" href="index.html#program" class=" ">Programs</a>
+            <a style="--i:3;" href="index.html#events" class="">Events</a>
+            <a style="--i:4;" href="index.html#teams" class="">Our Teams</a>
+            <a style="--i:5;" href="index.html#mitra" class="">Our Mitra</a>
+            <a style="--i:6;" href="index.html#contact" class="">Partner</a>
+            <a style="--i:7;" href="report.html" class="active-link">Report</a>
+        </nav>
+    </header>
+
+    <a id="backtop"></a>
+
+    <section class="home" id="home">
+
+        <div class="content">
+            <h3 class>donasi</h3>
+            <p>Ayo donasikan harta terbaik kita melalui Gerakan Aksi Sosial Sriwijaya !</p>
+        </div>
+    
+        <div class="image">
+            <img src="images/pordi-icon-donasi1.png" alt="">
+        </div>
+    
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="wrapper-menu-floating">
+                        <div class="styleajax">
+                            <div id="ajax" class="my-2 px-2 text-light d-flex" style="font-size:small;">
+                                <a href="#" class="btn" onclick="info()">Lihat Info</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col mt-4">
+                    <div class="card-group">
+                        <div class="card">
+                          <img src="images/donasi1.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Berbagi Bingkisan untuk Dhuafa</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.10.750.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>25 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 5 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="images/donasi3.1.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Aksi Bantuan Korban Kebakaran</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.23.450.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>6 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 24 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="images/donasi2.1.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Bantuan Korban Banjir</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 17%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.7.000.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>11 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 19 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col mt-4">
+                    <div class="card-group">
+                        <div class="card">
+                          <img src="images/donasi4.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Bantuan Gempa Bumi</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 30%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.4.750.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>29 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 2 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="images/donasi5.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Berbagi kepada anak-anak di jalur Gaza</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.15.655.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>2 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 30 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="images/donasi6.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Peduli Korban Gunung Semeru</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 94%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.171.000.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>1 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 58 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col mt-4">
+                    <div class="card-group">
+                        <div class="card">
+                          <img src="images/donasi81.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Peduli korban longsor</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.21.000.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>19 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 17 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="images/donasi7.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Bantuan kepada tunawisma</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 2%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.550.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>30 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 1 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                        <div class="card">
+                          <img src="images/donasi91.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h3 class="card-title">Bantuan Kepada lanjut usia</h3>
+                            <p class="card-text text-muted">Oleh Gerakan Aksi Sosial Sriwijaya</p>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col py-1" style="font-size:small">
+                                    <b>Rp.19.000.000</b>
+                                    <p>Terkumpul</p>
+                                </div>
+                                <div class="col py-1" style="font-size:small">
+                                    <p class="text-end"><b>22 Hari lagi</b></p>
+                                    <p></p>
+                                </div>
+                            </div>
+                            <p class="card-text"><small class="text-muted">Dibuka sejak 5 Hari yang lalu</small></p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="footer">
+
+        <div class="box-container">
+    
+            <div class="box center">
+                <h3>about us</h3>
+                <a href="#"> <img src="images/logo-profile.png" alt="our logo's" class="logo-profile"> </a>
+                <p>Gerakan Aksi Sosial Sriwijaya (GASS) secara resmi diluncurkan secara hukum sebagai organisasi yang bergerak di bidang sosial dan kemanusiaan.</p>
+            </div>
+    
+            <div class="box center">
+                <h3>quick links</h3>
+                <a href="index.html#home">home</a>
+                <a href="index.html#profile">profile</a>
+                <a href="index.html#program">program</a>
+                <a href="index.html#events">event</a>
+                <a href="index.html#teams">our team</a>
+                <a href="index.html#mitra">our mitra</a>
+                <a href="index.html#contact">partner</a>
+                <a href="#">report</a>
+            </div>
+    
+            <div class="box center">
+                <h3>program</h3>
+                <a href="index.html#program">beasiswa</a>
+                <a href="index.html#program">volunteer</a>
+                <a href="index.html#program">webinar</a>
+                <a href="index.html#program">donasi</a>
+            </div>
+    
+            <div class="box center">
+                <h3>follow us</h3>
+                <a href="#">facebook</a>
+                <a href="#">twitter</a>
+                <a href="https://instagram.com/gerakanaksi.id">instagram</a>
+                <a href="#">linkedin</a>
+            </div>
+    
+        </div>
+    
+        <h1 class="credit"> &copy; All Right Served @2022 </h1>
+    
+    </div>
+
+</body>
+</html>
